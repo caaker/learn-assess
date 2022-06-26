@@ -1,11 +1,8 @@
-const res = sieve(50);
-console.log(res);
-
 function sieve(n) {
   const sieve = makeSieve(n);
   for (let i = 2; i * i <= n; i++) {
     if (sieve[i]) {
-      for (let j = i * i; j < n; j = j + i) {
+      for (let j = i * i; j < n; j += i) {
         sieve[j] = false;
       }
     }
@@ -26,6 +23,7 @@ function makeResult(sieve) {
   return sieve.map((val, index) => val ? index : false).filter(val => val);
 }
 
+console.log(sieve(50));
 
 /*
 prime

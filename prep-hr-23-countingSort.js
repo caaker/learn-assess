@@ -4,6 +4,8 @@ const nums = arr.map((val)=>{
   return parseInt(val);
 })
 
+// direct access array, no hash needed as we have a finite range
+// the index itself has meaning
 function countingSort(arr) {
   let i = 0;
   const ret = new Array(100).fill(0);
@@ -15,5 +17,3 @@ function countingSort(arr) {
 }
 
 console.log(countingSort(nums));
-
-// example of a direct access array, index 0 actually holds values of index 0, like a simple hash map.

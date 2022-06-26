@@ -41,7 +41,7 @@ Find primes up to n.  Note that 0 and 1 are not primes and that 2 is the first p
 
 Time Complexity
 --------------------
-Time complexity is O(n^1.5).  The outer loop is reduced by a constant of 1/2 not included in Big O
+Time complexity is O(n^1.5).  The outer loop is reduced by a constant of 1/2 not included in Big O.
 The inner loop is reduced by the square root of n.
 
 */

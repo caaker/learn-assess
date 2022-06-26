@@ -22,7 +22,7 @@ Time Complexity
 --------------------
   - O(log(n))
 
-Notes | Links
+Notes
 --------------------
 https://en.wikipedia.org/wiki/Binary_search_algorithm
 

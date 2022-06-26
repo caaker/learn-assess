@@ -1,6 +1,6 @@
 function reverseArray(arr) {
   const length = arr.length;
-  for(let i = 0; i < length / 2; i++) {
+  for(let i = 0; i < Math.floor(length / 2); i++) {
     const temp = arr[i];
     arr[i] = arr[length - 1 - i]
     arr[length - 1 - i] = temp;
@@ -26,6 +26,8 @@ Test Cases
 [ 0, 1 ]      // will swap 0 and 1
 [ 0, 1, 2 ]   // will swap 1 and 2, will swap 1 and 1, extra swap
 
-Currently has extra swap for arrays with odd number of elements
+Use Math.floor() to get rid of extra swap
+ - Math.floor() will always bring to bottom integer
+ - Math.ceil() and Math.round() will always bring to upper integer in this case
 
 */

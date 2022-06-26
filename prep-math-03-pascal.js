@@ -25,7 +25,7 @@ var generate = function(n) {
       if( j === 0 || j === i ) {
         matrix[i][j] = 1;
 
-      // internal elements are simply adding the upper elements
+      // internal elements are simply adding the upper internal elements
       // draw out on paper to see the obviousness of the indexing
       } else {
         matrix[i][j] = matrix[i-1][j-1] + matrix[i-1][j];
